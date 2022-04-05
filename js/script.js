@@ -8,14 +8,17 @@
 
 */
 
-let nome = prompt('enter you name');
+const nome = prompt('enter you name');
 
-let cognome = prompt('enter you surname');
+const cognome = prompt('enter you surname');
 
-let color = prompt('enter you favourite color');
+const color = prompt('enter you favourite color');
 
-let pass = nome + cognome + color + '22';
+const passwordGen = 
+`
+La tua password è: <strong>${nome}${cognome}${color}22</strong>
+`;
 
-document.getElementById('pw-scarsa').innerHTML = 'ecco la tua password:' + '  ' + pass;
+document.getElementById('pw-scarsa').innerHTML = passwordGen;
 
 
